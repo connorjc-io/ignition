@@ -1,0 +1,41 @@
+{
+  "ignition": {
+    "version": "3.3.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "adm",
+          "wheel",
+          "sudo",
+          "systemd-journal",
+          "docker"
+        ],
+        "name": "connorjc",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILXHP9vRErIuoMKWCedx1GQ3jA5Usd7lCLTzTySbyWeF"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,dedicated"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/sysctl.d/99-sysctl.conf",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/3TOQQrCMBCF4b2nmBMUpW5zliHqqwymyZB5xutL3RXp+v8evApO5uM68e665GBzVEkyn3YlSvtoMHdqXoiu9iiQJOc9ewGeiw0obd36fAischRJcjkU3tsN8f9l5fvXrD63/TcAAP//m8W2AMIAAAA="
+        }
+      }
+    ]
+  }
+}
